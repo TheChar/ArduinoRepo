@@ -4,18 +4,6 @@
 //                     "Sea Shanty 2"                      \\
 //---------------------------------------------------------\\
 
-
-Conversation opened. 1 unread message.
-
-Skip to content
-Using Gmail with screen readers
-1 of 13
-oof jr.
-
-Charlie Bergdall <charliusb@gmail.com>
-7:37 AM (0 minutes ago)
-to me
-
 void setup() {
 
   // This initializes an array with all the  in it.
