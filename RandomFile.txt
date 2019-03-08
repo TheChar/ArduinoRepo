@@ -1,7 +1,0 @@
-void setup() {
-    // put code here to run once
-}
-
-void loop() {
-    // put code here to run forever
-}
