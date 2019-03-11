@@ -34,7 +34,9 @@ void setup() {
   int dotEighth = sixteenth*3;
   int d = 50; // constant note delay  
 
-  for(int i; i<2; i++) {} // loop for song to play ____ times. change x if x is for(int i; i<x; i++){} to change how many times to play songs
+  if(
+
+  for(int i=0; i<2;){
 
   tone(12, A[5], eighth); // tone plays a sound
   delay(eighth+d);
@@ -56,6 +58,10 @@ void setup() {
   delay(sixteenth+d);
   tone(12, E[5], quarter);
   delay(quarter+d);
+  tone(12, FG[5], eighth);
+  delay(eighth+d);
+  tone(12, E[5], sixteenth);
+  delay(sixteenth+d);
   tone(12, D[5], sixteenth);
   delay(sixteenth+d);
   tone(12, CD[5], eighth);
@@ -414,229 +420,312 @@ void setup() {
 
   // New line
   
-//  tone(12, CD[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, E[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, A[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[6], sixteenth);
-//  delay(sixteenth+d);
-//  tone(12, FG[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, E[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, D[6], eighth);
-//  delay(eighth+d);
-//  delay(sixteenth);
-//  tone(12, E[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], eighth);
-//  delay(eighth+d);
-//  tone(12, E[6], sixteenth);
-//  delay(sixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, A[5], eighth);
-//  delay(eighth+d);
-//  
-//  tone(12, A[5], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, B[5], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, E[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, B[5], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], eighth);
-//  delay(eighth+d);
-//  tone(12, G[5], eighth);
-//  delay(eighth+d);
-//  tone(12, A[5], quarter);
-//  delay(quarter+d);
-//
-//  // New line
-//  
-//  // skipping weird section again (its the same as above notes)!
-//
-//  // New line
-//  
-//  tone(12, CD[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, E[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, A[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[6], sixteenth);
-//  delay(sixteenth+d);
-//  tone(12, FG[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, E[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, D[6], eighth);
-//  delay(eighth+d);
-//  delay(sixteenth);
-//  tone(12, E[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], eighth);
-//  delay(eighth+d);
-//  tone(12, E[6], sixteenth);
-//  delay(sixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, A[5], eighth);
-//  delay(eighth+d);
-//  
-//  tone(12, A[5], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, B[5], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, E[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, D[6], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, B[5], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, CD[6], eighth);
-//  delay(eighth+d);
-//  tone(12, G[5], eighth);
-//  delay(eighth+d);
-//  tone(12, A[5], quarter);
-//  delay(quarter+d);
-//
-//  // New line
-//  
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, B[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, A[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, B[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//
-//  // New line
-//  
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, B[4], eighth);
-//  delay(eighth+d);
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  delay(eighth);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond);
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
-//  tone(12, A[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], dotSixteenth);
-//  delay(dotSixteenth+d);
-//  tone(12, FG[4], thirtySecond); 
-//  delay(thirtySecond+d);
-//  tone(12, G[4], eighth);
-//  delay(eighth+d);
-//  tone(12, E[4], eighth);
-//  delay(eighth+d);
+  tone(12, CD[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, A[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[6], sixteenth);
+  delay(sixteenth+d);
+  tone(12, FG[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, D[6], eighth);
+  delay(eighth+d);
+  delay(sixteenth);
+  tone(12, E[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], eighth);
+  delay(eighth+d);
+  tone(12, E[6], sixteenth);
+  delay(sixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, A[5], eighth);
+  delay(eighth+d);
+  
+  tone(12, A[5], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, B[5], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, B[5], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], eighth);
+  delay(eighth+d);
+  tone(12, G[5], eighth);
+  delay(eighth+d);
+  tone(12, A[5], quarter);
+  delay(quarter+d);
 
   // New line
+  
+  // skipping weird section again (its the same as above notes)!
+
+  // New line
+  
+  tone(12, CD[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, A[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[6], sixteenth);
+  delay(sixteenth+d);
+  tone(12, FG[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, D[6], eighth);
+  delay(eighth+d);
+  delay(sixteenth);
+  tone(12, E[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], eighth);
+  delay(eighth+d);
+  tone(12, E[6], sixteenth);
+  delay(sixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, A[5], eighth);
+  delay(eighth+d);
+  
+  tone(12, A[5], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, B[5], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, D[6], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, B[5], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, CD[6], eighth);
+  delay(eighth+d);
+  tone(12, G[5], eighth);
+  delay(eighth+d);
+  tone(12, A[5], quarter);
+  delay(quarter+d);
+
+  // New line
+  
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, B[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, A[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, B[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+
+  // New line
+  
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, B[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  delay(eighth);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond); 
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, B[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, A[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, B[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, A[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+
+  // New line
+
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, E[4], dotSixteenth);
+  delay(dotSixteenth+d);
+  tone(12, FG[4], thirtySecond);
+  delay(thirtySecond+d);
+  tone(12, G[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  tone(12, B[4], eighth);
+  delay(eighth+d);
+  tone(12, A[4], eighth);
+  delay(eighth+d);
+  delay(eighth);
+  tone(12, E[4], eighth);
+  delay(eighth+d);
+
+  tone(12, CD[5], sixteenth);
+  delay(sixteenth+d);
+  tone(12, B[4], sixteenth);
+  delay(sixteenth+d);
+  tone(12, CD[5], eighth);
+  delay(eighth+d);
+  tone(12, CD[5], eighth);
+  delay(eighth+d);
+  tone(12, CD[5], sixteenth);
+  delay(sixteenth+d);
+  tone(12, B[4], sixteenth);
+  delay(sixteenth+d);
+  tone(12, CD[5], eighth);
+  delay(eighth+d);
+  tone(12, B[4], eighth);
+  delay(eighth+d);
+  tone(12, CD[5], quarter);
+  delay(quarter+d);
+  }
+
+  
 
   // Start of zelda theme
 
