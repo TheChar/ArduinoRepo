@@ -1,0 +1,383 @@
+//---------------------------------------------------------\\
+//                      Copyright                          \\  
+//                   Simon Clark 2019                      \\ 
+//                   "Song Name here"                      \\
+//---------------------------------------------------------\\
+
+void setup() 
+{
+  int qnote = 250;           //qnote is a quarternote
+  int enote = qnote/2;       //enote is an eighth note
+  int snote = qnote/4;       //snote is a sixteenthnote
+  int hnote = qnote*2;       //hnote is a halfnote
+  int wnote = qnote*4;       //wnote is a wholenote
+  int c4 = 262;
+  int d4 = 294;
+  int e4 = 330;
+  int f4 = 349;
+  int g4 = 392;
+  int a4 = 440;
+  int b4 = 494;
+  int c5 = 523;
+  int d5 = 587;
+  
+  tone(12,262);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,330);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,392);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,494);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,440);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,392);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,330);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,262);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,294);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,349);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,440);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,523);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,494);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+  
+  delay(hnote);
+  
+  tone(12,262);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,330);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,392);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,494);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,440);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,392);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,330);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,262);
+  delay(qnote);
+  noTone(12);
+  delay(12);
+  
+  tone(12,294);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,349);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,440);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,523);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+  tone(12,494);     //end of intro
+  delay(hnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,440);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,494);
+  delay(qnote);
+  noTone(12);
+
+  tone(12,440);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+  
+  delay(qnote+wnote);
+
+  tone(12,494);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,494);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,440);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,494);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+
+  delay(wnote);
+
+  tone(12,523);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,523);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,b4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,c5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,c5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  delay(qnote);
+
+  tone(12,b4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,f4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,f4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,e4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,f4);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+
+  delay(wnote);
+
+  tone(12,b4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,b4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,a4);
+  delay(qnote);
+  noTone(12);
+  delay(12);
+
+  tone(12,b4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  delay(hnote);
+
+  tone(12,a4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,e4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,e4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,d4);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,e4);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,g4);
+  delay(qnote);
+  noTone(12);
+  delay(12);
+
+  delay(hnote+qnote);
+
+  tone(12,d5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,d5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,c5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,d5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,c5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,d5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,c5);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,622);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,622);
+  delay(hnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+
+  tone(12,587);
+  delay(qnote);
+  noTone(12);
+  delay(50);
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+ 
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
