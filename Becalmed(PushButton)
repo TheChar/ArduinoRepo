@@ -1,0 +1,435 @@
+int m = 12; //speaker pin
+int button = 3; //pushbutton
+    
+    //note lengths
+    int qNote = 666;  //qNote is quarter note
+    int hNote = qNote*2; //hNote is half note
+    int wNote = qNote*4; //wNote is whole note
+    int dqNote = qNote*1.5; //dotted quarter note
+    int dhNote = hNote*1.5; //dotted half note
+    int eNote = qNote*0.5;  //eighth note
+    int sNote = eNote*0.5;  //sixteenth note
+    
+    //note tones
+    int a3 = 220;
+    int b3 = 247;
+    int c4 = 262;
+    int cs4 = 277;
+    int d4 = 294;
+    
+    int e4 = 330;
+    int f4 = 349;
+    int g4 = 392;
+    int a4 = 440;
+    int b4 = 494;
+    int c5 = 523;
+    int ds5 = 622;
+    int e5 = 659;
+    int g5 = 784;
+    
+void setup() {
+  // put your setup code here, to run once:
+ pinMode(m,OUTPUT);   //sets pin as an output
+ pinMode(button,INPUT_PULLUP);  //sets as a push button
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ 
+    
+  /*
+  for(int i=0; i<2; i++)
+  */
+  if(digitalRead(button)==LOW)
+  {
+     tone(m,b3);  //1
+     delay(qNote);
+     noTone(m);
+  
+     tone(m,e4);  //2
+     delay(hNote);
+     noTone(m);
+  
+     tone(m,f4);  //3
+     delay(qNote);
+     noTone(m);
+  
+     tone(m,g4);  //4
+     delay(hNote);
+     noTone(m);
+  
+     tone(m,b4);  //5
+     delay(qNote);
+     noTone(m);
+  
+     tone(m,a4);  //6
+     delay(hNote);
+     noTone(m);
+  
+     tone(m,g4);  //7
+     delay(eNote);
+     noTone(m);
+  
+     tone(m,f4);  //8
+     delay(eNote);
+     noTone(m);
+  
+     tone(m,g4);  //9
+     delay(hNote);
+     noTone(m);
+  
+     tone(m,b4);  //10
+     delay(qNote);
+     noTone(m);
+  
+     tone(m,a4);  //11
+     delay(qNote);
+     noTone(m);
+  
+     tone(m,g4);  //12
+     delay(dqNote);
+     noTone(m);
+  
+     tone(m,f4);  //13
+     delay(eNote);
+     noTone(m);
+
+     tone(m,g4);  //14
+     delay(hNote);
+     noTone(m);
+     
+      tone(m,e4);  //15
+     delay(qNote);
+     noTone(m);
+
+     tone(m,c4);  //16
+     delay(hNote);
+     noTone(m);
+
+     tone(m,c4);  //17
+     delay(hNote);
+     noTone(m);
+
+     tone(m,e4);  //18
+     delay(qNote);
+     noTone(m);
+
+     tone(m,b3);  //19
+     delay(hNote);
+     noTone(m);
+
+     tone(m,e4);  //20
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //21
+     delay(hNote);
+     noTone(m);
+
+     tone(m,b4);  //22
+     delay(qNote);
+     noTone(m);
+
+     tone(m,c5);  //23
+     delay(hNote);
+     noTone(m);
+
+     tone(m,b4);  //24
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //25
+     delay(hNote);
+     noTone(m);
+
+     tone(m,g4);  //26
+     delay(eNote);
+     noTone(m);
+
+     tone(m,b4);  //27
+     delay(eNote);
+     noTone(m);
+
+     tone(m,c5);  //28
+     delay(hNote);
+     noTone(m);
+
+     tone(m,b4);  //29
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //30
+     delay(hNote);
+     noTone(m);
+
+     tone(m,e4);  //31
+     delay(qNote);
+     noTone(m);
+
+     tone(m,f4);  //32
+     delay(hNote);
+     noTone(m);
+
+     tone(m,f4);  //33
+     delay(qNote);
+     noTone(m);
+     
+     delay(qNote);
+     
+     tone(m,f4);  //34
+     delay(eNote);
+     noTone(m);
+
+     tone(m,g4);  //35
+     delay(eNote);
+     noTone(m);
+
+     tone(m,a4);  //36
+     delay(hNote);
+     noTone(m);
+
+     tone(m,g4);   //37
+     delay(hNote);
+     noTone(m);
+
+     tone(m,g4);  //38
+     delay(eNote);
+     noTone(m);
+
+     tone(m,e4);  //39
+     delay(eNote);
+     noTone(m);
+     
+     tone(m,c4);  //40
+     delay(qNote);
+     noTone(m);
+
+     tone(m,e4);  //41
+     delay(hNote);
+     noTone(m);
+
+     tone(m,e4);  //42
+     delay(hNote);
+     noTone(m);
+
+     tone(m,a4);  //43
+     delay(hNote);
+     noTone(m);
+
+     tone(m,g4);  //44
+     delay(hNote);
+     noTone(m);
+
+     tone(m,e4);  //45
+     delay(qNote);
+     noTone(m);
+
+     tone(m,f4);  //46
+     delay(wNote); //also 47
+     noTone(m);
+
+     tone(m,b3);  //48
+     delay(qNote);
+     noTone(m);
+
+     tone(m,e4);  //49
+     delay(hNote);
+     noTone(m);
+
+     tone(m,f4);  //50
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //51
+     delay(hNote);
+     noTone(m);
+
+     tone(m,b4);  //52
+     delay(qNote);
+     noTone(m);
+
+     tone(m,c5);  //53
+     delay(hNote);
+     noTone(m);
+
+     tone(m,b4);  //54
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //55
+     delay(hNote);
+     noTone(m);
+
+     tone(m,g4);  //56
+     delay(eNote);
+     noTone(m);
+
+     tone(m,e4);  //57
+     delay(eNote);
+     noTone(m);
+
+     tone(m,f4);  //58
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //59
+     delay(qNote);
+     noTone(m);
+
+     tone(m,a4);  //60
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //61
+     delay(dqNote);
+     noTone(m);
+
+     tone(m,a4);  //62
+     delay(sNote);
+     noTone(m);
+
+     tone(m,g4);  //63
+     delay(sNote);
+     noTone(m);
+
+     tone(m,f4);  //64
+     delay(qNote);
+     noTone(m);
+
+     tone(m,e4);  //65 and 66
+     delay(wNote);
+     noTone(m);
+
+     tone(m,b4);  //67
+     delay(eNote);
+     noTone(m);
+
+     tone(m,b4);  //68
+     delay(eNote);
+     noTone(m);
+
+     tone(m,e5);  //69
+     delay(qNote);
+     noTone(m);
+
+     tone(m,ds5); //70
+     delay(qNote);
+     noTone(m);
+
+     tone(m,b4);  //71
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //72
+     delay(qNote);
+     noTone(m);
+
+     tone(m,b4);  //73 and 74
+     delay(wNote);
+     noTone(m);
+
+     tone(m,b4);  //75
+     delay(hNote);
+     noTone(m);
+     
+     tone(m,g4);  //76
+     delay(eNote);
+     noTone(m);
+
+     tone(m,b4);  //77
+     delay(eNote);
+     noTone(m);
+
+     tone(m,a4);  //78
+     delay(eNote);
+     noTone(m);
+
+     tone(m,g4);  //79
+     delay(eNote);
+     noTone(m);
+
+     tone(m,f4);  //80
+     delay(qNote);
+     noTone(m);
+
+     tone(m,e4);  //81
+     delay(qNote);
+     noTone(m);
+
+     tone(m,c4);  //82
+     delay(qNote);
+     noTone(m);
+     
+     tone(m,b3);  //83 and 84
+     delay(wNote);
+     noTone(m);
+
+     tone(m,b3);  //85
+     delay(hNote);
+     noTone(m);
+
+     tone(m,b3);  //86 and 87
+     delay(qNote);
+     noTone(m);
+
+     tone(m,f4);  //88
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //89
+     delay(qNote);
+     noTone(m);
+
+     tone(m,a4);  //90
+     delay(qNote);
+     noTone(m);
+
+     tone(m,g4);  //91
+     delay(qNote);
+     noTone(m);
+
+     tone(m,a4);  //92
+     delay(sNote);
+     noTone(m);
+
+     tone(m,g4);  //93
+     delay(sNote);
+     noTone(m);
+
+     tone(m,f4);  //94
+     delay(qNote);
+     noTone(m);
+
+     tone(m,e4);  //95 and 96
+     delay(wNote);
+     noTone(m);
+
+     tone(m,b4);  //97
+     delay(qNote);
+     noTone(m);
+
+     tone(m,e5);  //98
+     delay(hNote);
+     noTone(m);
+
+     tone(m,e5);  //99
+     delay(qNote);
+     noTone(m);
+
+     tone(m,c5);  //100
+     delay(qNote);
+     noTone(m);
+
+     tone(m,b4);  //101
+     delay(qNote);
+     noTone(m);
+
+     tone(m,a4);  //102
+     delay(eNote);
+     noTone(m);
+
+     tone(m,a4);  //103 and 104
+     delay(wNote);
+     noTone(m);
+  }
+}
